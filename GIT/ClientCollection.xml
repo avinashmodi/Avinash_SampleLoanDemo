@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<ClientCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ClientList>
+    <ClientInfo>
+      <ClientNo>4625210</ClientNo>
+      <ClientName>Avinash0</ClientName>
+      <AccountNumber>1234560</AccountNumber>
+      <isKYCDone>true</isKYCDone>
+    </ClientInfo>
+    <ClientInfo>
+      <ClientNo>4625211</ClientNo>
+      <ClientName>Avinash1</ClientName>
+      <AccountNumber>1234561</AccountNumber>
+      <isKYCDone>true</isKYCDone>
+    </ClientInfo>
+    <ClientInfo>
+      <ClientNo>4625212</ClientNo>
+      <ClientName>Avinash2</ClientName>
+      <AccountNumber>1234562</AccountNumber>
+      <isKYCDone>true</isKYCDone>
+    </ClientInfo>
+    <ClientInfo>
+      <ClientNo>4625213</ClientNo>
+      <ClientName>Avinash3</ClientName>
+      <AccountNumber>1234563</AccountNumber>
+      <isKYCDone>true</isKYCDone>
+    </ClientInfo>
+    <ClientInfo>
+      <ClientNo>4625214</ClientNo>
+      <ClientName>Avinash4</ClientName>
+      <AccountNumber>1234564</AccountNumber>
+      <isKYCDone>true</isKYCDone>
+    </ClientInfo>
+  </ClientList>
+</ClientCollection>

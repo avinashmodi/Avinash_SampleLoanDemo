@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<LoanCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LoanList>
+    <LoanDetails>
+      <loanNo>12340</loanNo>
+      <loanAccount>1234560</loanAccount>
+      <ClientNo>4625210</ClientNo>
+      <ClientName>Avinash0</ClientName>
+      <InterestRate>10%</InterestRate>
+      <InitiatedBy>46250</InitiatedBy>
+      <loanStatus>Approved</loanStatus>
+      <PendingWith />
+    </LoanDetails>
+    <LoanDetails>
+      <loanNo>12342</loanNo>
+      <loanAccount>1234562</loanAccount>
+      <ClientNo>4625212</ClientNo>
+      <ClientName>Avinash2</ClientName>
+      <InterestRate>10%</InterestRate>
+      <InitiatedBy>46252</InitiatedBy>
+      <loanStatus>Approved</loanStatus>
+      <PendingWith />
+    </LoanDetails>
+    <LoanDetails>
+      <loanNo>12343</loanNo>
+      <loanAccount>1234563</loanAccount>
+      <ClientNo>4625213</ClientNo>
+      <ClientName>Avinash3</ClientName>
+      <InterestRate>10%</InterestRate>
+      <InitiatedBy>46253</InitiatedBy>
+      <loanStatus>Approved</loanStatus>
+      <PendingWith />
+    </LoanDetails>
+    <LoanDetails>
+      <loanNo>12344</loanNo>
+      <loanAccount>1234564</loanAccount>
+      <ClientNo>4625214</ClientNo>
+      <ClientName>Avinash4</ClientName>
+      <InterestRate>10%</InterestRate>
+      <InitiatedBy>46254</InitiatedBy>
+      <loanStatus>Approved</loanStatus>
+      <PendingWith />
+    </LoanDetails>
+    <LoanDetails>
+      <loanNo>12340111</loanNo>
+      <loanAccount>1234560</loanAccount>
+      <ClientNo>4625210</ClientNo>
+      <ClientName>Avinash0</ClientName>
+      <InterestRate>10%</InterestRate>
+      <loanStatus>Approved</loanStatus>
+      <LoanType>PrivateLoan</LoanType>
+      <PendingWith />
+    </LoanDetails>
+    <LoanDetails>
+      <loanNo>12341</loanNo>
+      <loanAccount>1234561</loanAccount>
+      <ClientNo>4625211</ClientNo>
+      <ClientName>Avinash1</ClientName>
+      <InterestRate>10%</InterestRate>
+      <InitiatedBy>46251</InitiatedBy>
+      <loanStatus>Approved</loanStatus>
+      <PendingWith />
+    </LoanDetails>
+    <LoanDetails>
+      <loanNo>457450</loanNo>
+      <loanAccount>1234560</loanAccount>
+      <ClientNo>4625210</ClientNo>
+      <ClientName>Avinash0</ClientName>
+      <InterestRate>6%</InterestRate>
+      <InitiatedBy>462521</InitiatedBy>
+      <loanStatus>Approved</loanStatus>
+      <LoanType>Home Loan</LoanType>
+      <PendingWith />
+    </LoanDetails>
+    <LoanDetails>
+      <loanNo>283494</loanNo>
+      <loanAccount>1234560</loanAccount>
+      <ClientNo>4625210</ClientNo>
+      <ClientName>Avinash0</ClientName>
+      <InterestRate>6%</InterestRate>
+      <InitiatedBy>462521</InitiatedBy>
+      <loanStatus>Approved</loanStatus>
+      <LoanType>Home Loan</LoanType>
+      <PendingWith />
+      <loanAmount>500000</loanAmount>
+    </LoanDetails>
+    <LoanDetails>
+      <loanNo>013176</loanNo>
+      <loanAccount>1234560</loanAccount>
+      <ClientNo>4625210</ClientNo>
+      <ClientName>Avinash0</ClientName>
+      <InterestRate>6%</InterestRate>
+      <InitiatedBy>462521</InitiatedBy>
+      <loanStatus>Approved</loanStatus>
+      <LoanType>Home Loan</LoanType>
+      <PendingWith />
+      <loanAmount>600000</loanAmount>
+    </LoanDetails>
+    <LoanDetails>
+      <loanNo>357108</loanNo>
+      <loanAccount>1234560</loanAccount>
+      <ClientNo>4625210</ClientNo>
+      <ClientName>Avinash0</ClientName>
+      <InterestRate>6%</InterestRate>
+      <loanStatus>Approved</loanStatus>
+      <LoanType>Home Loan</LoanType>
+      <PendingWith />
+      <loanAmount>123123123</loanAmount>
+    </LoanDetails>
+  </LoanList>
+</LoanCollection>
