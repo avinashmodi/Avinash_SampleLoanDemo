@@ -1,0 +1,21 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2018-04-24 13:58:36
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2018-04-24 13:58:36 ::1 GET /Login - 56299 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/65.0.3325.181+Safari/537.36 - 200 0 0 14231
+2018-04-24 13:58:36 ::1 GET /Content/Site.css - 56299 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/65.0.3325.181+Safari/537.36 http://localhost:56299/Login 304 0 0 15
+2018-04-24 13:58:36 ::1 GET /Scripts/modernizr-2.6.2.js - 56299 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/65.0.3325.181+Safari/537.36 http://localhost:56299/Login 304 0 0 17
+2018-04-24 13:58:36 ::1 GET /Scripts/bootstrap.js - 56299 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/65.0.3325.181+Safari/537.36 http://localhost:56299/Login 304 0 0 185
+2018-04-24 13:58:36 ::1 GET /Content/bootstrap.css - 56299 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/65.0.3325.181+Safari/537.36 http://localhost:56299/Login 200 0 0 198
+2018-04-24 13:58:36 ::1 GET /Scripts/respond.js - 56299 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/65.0.3325.181+Safari/537.36 http://localhost:56299/Login 304 0 0 218
+2018-04-24 13:58:36 ::1 GET /Scripts/jquery-1.10.2.js - 56299 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/65.0.3325.181+Safari/537.36 http://localhost:56299/Login 304 0 0 358
+2018-04-24 13:58:36 ::1 GET /favicon.ico - 56299 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/65.0.3325.181+Safari/537.36 http://localhost:56299/Login 304 0 0 36
+2018-04-24 13:58:57 ::1 GET /Contact - 56299 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/65.0.3325.181+Safari/537.36 - 200 0 0 369
+2018-04-24 13:59:06 ::1 GET /About - 56299 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/65.0.3325.181+Safari/537.36 - 200 0 0 50
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2018-04-24 18:02:04
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2018-04-24 18:02:04 ::1 GET /Login - 56299 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/65.0.3325.181+Safari/537.36 - 200 0 0 24319
+2018-04-24 18:08:46 ::1 GET /dashboard - 56299 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/65.0.3325.181+Safari/537.36 - 500 0 0 9192
+2018-04-24 18:08:58 ::1 GET /initiateloan - 56299 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/65.0.3325.181+Safari/537.36 - 404 0 2 226

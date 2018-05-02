@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<EmployeeCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EmployeeList>
+<Employee>
+      <EmpID>Admin</EmpID>
+      <EmpName>Administrator</EmpName>
+      <Password>admin</Password>
+      <Role>Admin</Role>
+      <Hierarchy>Admin</Hierarchy>
+    </Employee>
+    
+    <Employee>
+      <EmpID>462521</EmpID>
+      <EmpName>Avinash</EmpName>
+      <Password>admin</Password>
+      <Role>BankUser</Role>
+      <Hierarchy>Admin</Hierarchy>
+    </Employee>
+    <Employee>
+      <EmpID>462522</EmpID>
+      <EmpName>Chaitanya</EmpName>
+      <Password>admin</Password>
+      <Role>BankUser</Role>
+      <Hierarchy>Admin</Hierarchy>
+    </Employee>
+    <Employee>
+      <EmpID>462523</EmpID>
+      <EmpName>Vijay</EmpName>
+      <Password>admin</Password>
+      <Role>BankUser</Role>
+      <Hierarchy>Admin</Hierarchy>
+    </Employee>
+    <Employee>
+      <EmpID>462524</EmpID>
+      <EmpName>Venky</EmpName>
+      <Password>admin</Password>
+      <Role>BankUser</Role>
+      <Hierarchy>Admin</Hierarchy>
+    </Employee>
+    <Employee>
+      <EmpID>462525</EmpID>
+      <EmpName>Kumar</EmpName>
+      <Password>admin</Password>
+      <Role>BankUser</Role>
+      <Hierarchy>Admin</Hierarchy>
+    </Employee>
+  </EmployeeList>
+</EmployeeCollection>
