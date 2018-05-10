@@ -1,0 +1,7 @@
+// Powered by Infostretch 
+timestamps {
+node () {    def msBuild   stage('Preparation') { // for display purposes      // Get some code from a GitHub repository      git '/c/AvinashProj/TestGitProj'      // Get the msBuild tool.      // ** NOTE: This 'msBuild' msBuild tool must be configured      // **       in the global configuration.                 msBuild = tool 'MSBuild'         }
+ stage ('TestGib - Checkout') {   checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '', url: '/c/AvinashProj/TestGitProj']]])  } stage('clean'){       bat(/"${msBuild}" TestGitProj\TestGitProj.csproj -t:Clean/)   } stage ('TestGib - Build') {        bat(/"${msBuild}" TestGitProj\TestGitProj.csproj -p:Configuration=Release -p:PublishProfile=Release/) } }}
+ 
+ [PathToNUnit]\bin\nunit-console.exe [PathToTestDll]\Selenium.Tests.dll
+  /xml=nunit-result.xml
