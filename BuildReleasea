@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Run">
+  <PropertyGroup>
+    <Configuration>Release</Configuration>
+    <ProjectName>ManageLoanCICDWF</ProjectName>
+    <TemporaryFolder>temp</TemporaryFolder>
+  </PropertyGroup>
+
+  <Target Name="Run">
+    
+    <CallTarget Targets="Restore" />
+    <CallTarget Targets="Version" />
+    <CallTarget Targets="Build" />
+    <CallTarget Targets="Pack" />
+    
+  </Target>
+
+  <Target Name="Restore">
+    <Message Text="Restore NuGet packages" />
+    <Exec Command="C:\Users\avina\Downloads\nuget.exe restore" ContinueOnError="False"/>
+  </Target>  
+  <UsingTask AssemblyFile="packages/MSBuild.Extension.Pack.1.9.1/tools/net40/MSBuild.ExtensionPack.dll" TaskName="AssemblyInfo"/>
+  <Target Name="Version">
+    <Message Text="Versioning assemblies" />
+
+    <ItemGroup>
+      <AssemblyInfoFiles Include="**\AssemblyInfo.cs" />
+    </ItemGroup>
+
+    <AssemblyInfo
+        AssemblyInfoFiles="@(AssemblyInfoFiles)"
+            
+        AssemblyMajorVersion="$(MajorVersion)"
+        AssemblyMinorVersion="$(MinorVersion)"
+        AssemblyBuildNumberType="DateString"
+        AssemblyBuildNumberFormat="MMdd"
+        AssemblyRevisionType="AutoIncrement"
+        AssemblyRevisionFormat="000"
+          
+        AssemblyFileMajorVersion="$(MajorVersion)"
+        AssemblyFileMinorVersion="$(MinorVersion)"
+        AssemblyFileBuildNumberType="DateString"
+        AssemblyFileBuildNumberFormat="MMdd"
+        AssemblyFileRevisionType="AutoIncrement"
+        AssemblyFileRevisionFormat="000"
+        />
+  </Target>
+
+  <Target Name="Build">
+    <Message Text="Build $(Configuration)" />
+    <MSBuild Projects="$(ProjectName).sln" Properties="Configuration=$(Configuration)" ContinueOnError="False"/>
+  </Target>
+
+  <UsingTask AssemblyFile="packages/MSBuild.Extension.Pack.1.9.1/tools/net40/MSBuild.ExtensionPack.dll" TaskName="Assembly"/>
+  <UsingTask AssemblyFile="packages/MSBuild.Extension.Pack.1.9.1/tools/net40/MSBuild.ExtensionPack.dll" TaskName="Zip"/>
+  <Target Name="Pack">
+    <PropertyGroup>
+      <BinaryFolder>$(ProjectName)/bin</BinaryFolder>
+      <MainExecutable>$(BinaryFolder)/$(ProjectName).dll</MainExecutable>      
+    </PropertyGroup>
+    <Assembly TaskAction="GetInfo" NetAssembly="$(MainExecutable)">
+      <Output TaskParameter="OutputItems" ItemName="Info"/>
+    </Assembly>
+    <Message Text="Identity: %(Info.Identity)" />
+    <Message Text="FullName: %(Info.FullName)" />
+    <Message Text="FileVersion: %(Info.FileVersion)" />
+    <Message Text="AssemblyVersion: %(Info.AssemblyVersion)" />
+
+    <PropertyGroup>
+      <PackageFolder>$(TemporaryFolder)\$(ProjectName)_$(Configuration)_%(Info.AssemblyVersion)</PackageFolder>
+      <ZipFileName>$(ProjectName)_$(Configuration)_%(Info.AssemblyVersion).zip</ZipFileName>
+    </PropertyGroup>
+
+    <MSBuild Targets="Package" Projects="$(ProjectName).sln" ContinueOnError="False"
+      Properties="PublishProfile=$(Configuration);DesktopBuildPackageLocation=..\$(PackageFolder)\$(ZipFileName)" />
+
+    <CreateItem Include="$(PackageFolder)\*.*" >
+      <Output ItemName="ZipFiles" TaskParameter="Include"/>
+    </CreateItem>
+
+    <ConvertToAbsolutePath Paths="$(TemporaryFolder)">
+      <Output TaskParameter="AbsolutePaths" PropertyName="TemporaryFolderAbsolute"/>
+    </ConvertToAbsolutePath>
+
+    <Zip TaskAction="Create" CompressFiles="@(ZipFiles)" RemoveRoot="$(TemporaryFolderAbsolute)" ZipFileName="$(ZipFileName)"/>
+    <RemoveDir Directories="$(TemporaryFolder)" ContinueOnError="True"/>
+  </Target>
+</Project>
