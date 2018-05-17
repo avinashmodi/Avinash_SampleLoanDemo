@@ -67,7 +67,7 @@
     <Message Text="AssemblyVersion: %(Info.AssemblyVersion)" />
 
     <PropertyGroup>
-      <PackageFolder>$(TemporaryFolder)\$(ProjectName)_$(Configuration)_%(Info.AssemblyVersion)</PackageFolder>
+      <PackageFolder>$(TemporaryFolder)\$(ProjectName)_$(Configuration)_$([System.DateTime]::Now.ToString("yyyy.MM.dd.HH.mm")</PackageFolder>
       <ZipFileName>$(ProjectName)_$(Configuration)_%(Info.AssemblyVersion).zip</ZipFileName>
     </PropertyGroup>
 
